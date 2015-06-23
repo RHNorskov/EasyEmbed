@@ -1,0 +1,8 @@
+{
+  "name": "embed",
+  "main": "jquery.emebd.js",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": ">=1.7"
+  }
+}
