@@ -64,4 +64,8 @@
             setSize();
         })
     };
+
+    $(document).ready(function() {
+        $('[data-embed]').embed();
+    })
 })(jQuery);
