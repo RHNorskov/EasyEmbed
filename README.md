@@ -28,7 +28,6 @@ $('#easy-embed').easyEmbed();
 
 ######JavaScript
 ```
-<div id="easy-embed"></div>
 $('#easy-embed').easyEmbed({
     id: 'VIDEO_ID'
 });
