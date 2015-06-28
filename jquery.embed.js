@@ -1,9 +1,12 @@
-;(function ($, window, document) {
+;
+(function ($, window, document) {
     $.fn.embed = function (options) {
         var that = this;
 
         var settings = $.extend({
-            id: this.data('id') || "ScMzIvxBSi4"
+            id: this.data('id') || 'ScMzIvxBSi4',
+            controls: this.data('controls') || false,
+            info: this.data('info') || false
         }, options);
 
         var getThumbnail = function (callback) {
@@ -48,10 +51,10 @@
 
         that.find('*').addBack().click(function () {
             that.html($('<iframe>')
+                .attr('src', '//youtube.com/embed/' + settings.id + '?rel=0&autoplay=1' + '&controls=' + (settings.controls + 0) + '&showinfo=' + (settings.info + 0))
                 .attr('width', '100%')
                 .attr('height', '100%')
-                .attr('src', '//youtube.com/embed/' + settings.id + '?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0')
-                .attr('frameborder', 0))
+                .attr('frameborder', 0));
         });
 
         return this;
