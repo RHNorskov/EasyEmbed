@@ -1,6 +1,6 @@
 ;
 (function ($, window, document) {
-    $.fn.embed = function (options) {
+    $.fn.easyEmbed = function (options) {
         var that = this;
 
         var settings = $.extend({
@@ -61,6 +61,6 @@
     };
 
     $(document).ready(function () {
-        $('[data-embed]').embed();
+        $('[data-easy-embed]').easyEmbed();
     })
 })(jQuery, window, document);
