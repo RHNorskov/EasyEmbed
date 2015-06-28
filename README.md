@@ -40,6 +40,5 @@ controls | boolean | false | Show player controls
 info | boolean | false | Show video title and player actions
 
 ### Todo's
-
-Better documentation
-Add option for fixed height and width
+* Better documentation
+* Add option for fixed height and width
