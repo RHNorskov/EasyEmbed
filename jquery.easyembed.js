@@ -61,6 +61,8 @@
     };
 
     $(document).ready(function () {
-        $('[data-easy-embed]').easyEmbed();
+        $('[data-easy-embed]').each(function() {
+            $(this).easyEmbed();
+        })
     })
 })(jQuery, window, document);
