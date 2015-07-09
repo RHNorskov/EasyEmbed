@@ -1,8 +1,16 @@
 {
   "name": "EasyEmbed",
-  "main": "jquery.emebd.js",
-  "license": "MIT",
+  "version": "1.0.2",
+  "main": "jquery.easyembed.js",
   "dependencies": {
     "jquery": ">=1.7"
-  }
+  },
+  "keywords": [
+    "youtube",
+    "embed",
+  ],
+  "authors": [
+    "Rasmus Nørskov <rasmus@norskov.org>"
+  ],
+  "license": "MIT",
 }
