@@ -40,6 +40,14 @@ controls | boolean | false | Show player controls
 info | boolean | false | Show video title and player actions
 thumbnail | string | auto | Override automatic thumbnail
 
+### Overlay
+Making a custom overlay has never been easier. Just create your elements inside the EasyEmbed element and style away.
+```
+<div data-easy-embed>
+    <div class="overlay">PLAY</div>
+</div>
+```
+
 ### Todo's
 * Better documentation
 
