@@ -1,5 +1,5 @@
 # EasyEmbed
-> 0.0.3
+> 1.0.2
 
 EasyEmbed is a jQuery plugin...
 
