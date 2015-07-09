@@ -43,4 +43,4 @@ thumbnail | string | auto | Override automatic thumbnail
 ### Todo's
 * Better documentation
 
-Don't hesitate to request missing featues
+Don't hesitate to request missing features
