@@ -7,6 +7,12 @@ EasyEmbed is a jQuery plugin...
   - YouTube video embedding
   - Standard definition thumbnail fallback
 
+### Installation
+######Bower
+```
+bower install easyembed --save
+```
+
 ### Initialization
 Initialization can be done in two ways, either by a html data tag, or by JavaScript
 ######HTML
