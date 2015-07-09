@@ -46,7 +46,7 @@ Option | Type | Default | Description
 id | string | ScMzIvxBSi4 | ID of the wanted video
 controls | boolean | false | Show player controls
 info | boolean | false | Show video title and player actions
-thumbnail | string | auto | Override automatic thumbnail
+thumbnail | string | auto | Image path to override automatic thumbnail
 
 
 ### Todo's
