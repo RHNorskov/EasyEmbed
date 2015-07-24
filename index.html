@@ -4,12 +4,112 @@
     <meta charset="UTF-8">
     <title>EasyEmbed</title>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
     <script src="jquery.easyembed.js"></script>
+
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            font: 100%/1.618 "Open Sans", "Helvetic Neue", Helvetica, Arial, sans-serif;
+            text-align: center;
+            color: #434a54;
+        }
+
+        h1 {
+            font-family: "Arvo";
+            font-size: 4rem;
+            text-shadow: #ffffff 0px 1px 0px;
+            color: #8A66BB;
+        }
+
+        h2 {
+            font-family: "Arvo";
+            font-size: 2rem;
+            text-shadow: #ffffff 0px 1px 0px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #8A66BB;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        main > div > section {
+            width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        /* OVERLAY */
+        .overlay {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, .5);
+            cursor: pointer;
+        }
+
+        .play {
+            width: 65px;
+            height: 65px;
+            margin: auto;
+            position: absolute;
+            top: 0;right: 0;bottom: 0;left: 0;
+            border-radius: 100%;
+            transition: all 0.5s ease;
+            cursor: pointer;
+            border: 5px solid #ffffff;
+            box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(135deg, #8A66BB 0%, #5B3F80 100%);
+        }
+
+        .play:hover {
+            background: linear-gradient(135deg, #5B3F80 0%, #8A66BB 100%);
+        }
+
+        .arrow {
+            width: 0;
+            height: 0;
+            margin: auto;
+            position: absolute;
+            top: 0;right: -4px;bottom: 0;left: 0;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-left: 16px solid #ffffff;
+        }
+    </style>
 </head>
 <body>
 
-<div data-easy-embed></div>
+<main>
+    <h1>Easy Embed</h1>
+
+    <h2><a href="https://github.com/RHNorskov/EasyEmbed" target="_blank">GITHUB</a></h2>
+
+    <section>
+        <div data-easy-embed="youtube:Q5691RGDUJ4">
+            <div class="overlay">
+                <div class="play">
+                    <div class="arrow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
 </body>
 </html>
