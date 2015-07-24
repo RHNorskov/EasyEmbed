@@ -4,7 +4,9 @@
 EasyEmbed is a small and fast jQuery plugin which allows you to embed Youtube videos with standard definition thumbnail fallback into your web page. All the parameters can be passed via Html5 data attributes without the need to write any javascript.
 
 ### Features
-  - YouTube video embedding
+  - YouTube and Vimeo video embedding
+  - Fully customizable overlay support
+  - Responsive
   - Standard definition thumbnail fallback
 
 ### Installation
@@ -14,10 +16,12 @@ bower install easyembed --save
 ```
 
 ### Initialization
-Initialization can be done in two ways, either by a html data tag, or by JavaScript
+Initialization can be done in two ways, either by a html data tag, or by JavaScript.
+Leave data-easy-embed blank for placeholder video
 ######HTML
 ```
-<div data-easy-embed></div>
+<div data-easy-embed="VIDEO_PROVIDER:VIDEO_ID"></div>
+<div data-easy-embed="youtube:Q5691RGDUJ4"></div>
 ```
 
 ######JavaScript
@@ -38,7 +42,7 @@ Making a custom overlay has never been easier. Just create your elements inside 
 Options can be applied in the same two ways as the initialization, by html data tags, or by JavaScript
 ######HTML
 ```
-<div data-id="VIDEO_ID" data-easy-embed></div>
+<div data-id="VIDEO_ID" data-provider="VIDEO_PROVIDER"data-easy-embed></div>
 ```
 
 ######JavaScript
