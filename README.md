@@ -1,5 +1,5 @@
 # EasyEmbed
-> 1.1.0
+> 1.1.1
 
 EasyEmbed is a small and fast jQuery plugin which allows you to embed Youtube videos with standard definition thumbnail fallback into your web page. All the parameters can be passed via Html5 data attributes without the need to write any javascript.
 
