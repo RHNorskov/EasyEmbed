@@ -6,8 +6,10 @@
     "jquery": ">=1.7"
   },
   "keywords": [
+    "easyembed",
     "youtube",
-    "embed",
+    "vimeo",
+    "embed"
   ],
   "authors": [
     "Rasmus Nørskov <rasmus@norskov.org>"
