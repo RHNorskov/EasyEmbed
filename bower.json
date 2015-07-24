@@ -1,5 +1,5 @@
 {
-  "name": "EasyEmbed",
+  "name": "easyembed",
   "version": "1.1.0",
   "main": "jquery.easyembed.js",
   "dependencies": {
