@@ -116,8 +116,10 @@
     };
 
     $(document).ready(function () {
-        $('[data-easy-embed]').each(function () {
-            $(this).easyEmbed();
-        })
+		if($('[data-easy-embed]').length > 0){
+			$('[data-easy-embed]').each(function () {
+				$(this).easyEmbed();
+			})
+		}
     })
 })(jQuery, window, document);
