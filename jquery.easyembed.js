@@ -36,14 +36,14 @@
                     (function getImage() {
                         var url = base + sizes[0] + '.jpg';
 
-                        $("<img/>").attr('src', url).load(function () {
+                        $("<img/>").attr('src', url).on("load",(function () {
                             if (this.width != 120 && this.height != 90) {
                                 callback(url);
                             } else {
                                 sizes.shift();
                                 getImage();
                             }
-                        })
+                        }))
                     })();
 
                     break;
@@ -116,10 +116,10 @@
     };
 
     $(document).ready(function () {
-		if($('[data-easy-embed]').length > 0){
-			$('[data-easy-embed]').each(function () {
-				$(this).easyEmbed();
-			})
-		}
+        if($('[data-easy-embed]').length > 0){
+            $('[data-easy-embed]').each(function () {
+                $(this).easyEmbed();
+            })
+        }
     })
 })(jQuery, window, document);
