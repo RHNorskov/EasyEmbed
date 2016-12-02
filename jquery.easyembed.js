@@ -36,7 +36,7 @@
                     (function getImage() {
                         var url = base + sizes[0] + '.jpg';
 
-                        $("<img/>").attr('src', url).on("load",(function () {
+                        $("<img/>").attr('src', url).on("load", (function () {
                             if (this.width != 120 && this.height != 90) {
                                 callback(url);
                             } else {
@@ -49,8 +49,12 @@
                     break;
 
                 case 'vimeo':
-                    $.get('//vimeo.com/api/v2/video/' + settings.id + '.json', function (data) {
-                        callback(data[0].thumbnail_large);
+                    //$.get('//vimeo.com/api/v2/video/' + settings.id + '.json', function (data) {
+                    //    callback(data[0].thumbnail_large);
+                    //})
+
+                    $.get('https://vimeo.com/api/oembed.json?url=http://vimeo.com/' + settings.id , function (data) {
+                        callback(data.thumbnail_url);
                     })
 
                     break;
@@ -92,6 +96,7 @@
                 .attr('height', '100%')
                 .attr('frameborder', 0)
                 .attr('allowfullscreen', 1));
+            $that.addClass("playing-video");
         }
 
         setSize();
@@ -116,7 +121,7 @@
     };
 
     $(document).ready(function () {
-        if($('[data-easy-embed]').length > 0){
+        if ($('[data-easy-embed]').length > 0) {
             $('[data-easy-embed]').each(function () {
                 $(this).easyEmbed();
             })
